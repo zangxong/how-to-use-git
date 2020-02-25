@@ -1,0 +1,46 @@
+-1.在官网 https://github.com/ 注册账号
+
+  --点击SIGN UP
+  --等待验证通过
+  --选择计划（个人for free）
+  --验证邮箱
+  --去邮箱验证
+  --设置基本信息并学习GUIDE
+  
+--2.下载git (WINDOWS)
+本段参考https://mp.weixin.qq.com/s?__biz=MzI5MzQ0ODE0NA==&mid=2247483763&idx=1&sn=a1eea90cb36dc937fec62fe2a242c92d&exportkey=AcjjpWzSWbSOfxDMBLy9ttU%3D&pass_ticket=229rDOyQFqXp%2FLuJxKboP2E8M1StYHYNmFNDFjSKvNEZb%2BxH2dDBOz3UQtMzXoGx
+  --下载地址https://gitforwindows.org/
+  --安装（勾选Git Bash here”和“Git GUI here”），其他默认，默认vim
+  --使用git
+  ---我在E:/中新建文件夹作为代码存放的目录，右键，点击git bash here
+  ---关联git与github
+  ////////////////////////在$后每次手动输入以下代码，注意替换////////////////////////
+     
+     git config --global user.name "你的github账号用户名"
+
+      git config --global user.email "你的github账号所用邮箱"
+      
+  ////////////////////////在$后每次手动输入以上代码，注意替换////////////////////////
+  
+    ---生成SSH Key
+    
+  ////////////////////////在$后每次手动输入以下代码，注意替换////////////////////////
+      ssh-keygen -t rsa -C "你的邮箱"
+  ////////////////////////在$后每次手动输入以上代码，注意替换////////////////////////
+    ---一直回车，直到产生key
+    ---复制key
+    ////////////////////////在$后每次手动输入以下代码，注意替换////////////////////////
+      clip < ~/.ssh/id_rsa.pub 
+  ////////////////////////在$后每次手动输入以上代码，注意替换////////////////////////
+    ---不行，可以试试去掉.ssh,如果有暗码复制的是你的key图，否则不报错正常结束（一长串码）
+    ---连接github
+  --------使用浏览器，登录github,找到settings，选SSH ,选右上角的new ssh key
+  --------title随便填，key那一栏直接右键粘贴即可，再点击add ssh key.
+  
+  
+  
+  
+  
+  
+  
+  
